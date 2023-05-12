@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>댓글 표시 예시</title>
+</head>
+<body>
+ <h1>댓글</h1>
+ 
+ <!-- 댓글 입력 폼 -->
+ <form id="comment-form">
+ <label for="name">이름:</label>
+ <input type="text" id="name" name="name" required><br><br>
+ 
+ <label for="comment">댓글:</label><br>
+ <textarea id="comment" name="comment" rows="4" cols="50" required></textarea><br><br>
+ 
+ <input type="submit" value="댓글 등록">
+ </form>
+ 
+ <!-- 댓글 목록 -->
+ <div id="comment-list">
+ <!-- 댓글이 여기에 동적으로 추가됩니다 -->
+ </div>
+
+ <!-- Firebase JavaScript SDK -->
+ <script type="module" src="firebase.js"></script>
+ <!-- 댓글 관련 스크립트 -->
+ <script type="module" src="comment.js"></script>
+</body>
+</html>
